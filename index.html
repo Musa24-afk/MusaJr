@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Musa Molefe | Creative Photographer</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url('images/photo1.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+    }
+    header {
+      background: rgba(0, 0, 0, 0.7);
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav {
+      background: rgba(0, 0, 0, 0.8);
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    main {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 10px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    }
+    .caption {
+      text-align: center;
+      font-style: italic;
+      margin-top: 0.5rem;
+    }
+    section {
+      margin-bottom: 3rem;
+    }
+    footer {
+      background: rgba(0, 0, 0, 0.8);
+      color: #fff;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    .social {
+      margin-top: 1rem;
+    }
+    .social a {
+      color: #1da1f2;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      max-width: 500px;
+    }
+    input, textarea {
+      padding: 0.8rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+    button {
+      padding: 0.8rem;
+      background: #111;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Musa Molefe</h1>
+    <p>Visual Storyteller | Photographer</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contact">Contact</a>
+    <a href="https://www.instagram.com/musa_jr43/" target="_blank">Instagram</a>
+  </nav>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I’m Musa Molefe, a skilled photographer specializing in visual storytelling. My work captures moments rooted in identity, heritage, and contemporary culture through a uniquely African lens.</p>
+    </section>
+
+    <section id="services">
+      <h2>Our Services</h2>
+      <p>We offer high-quality photography services tailored for weddings, birthdays, graduations, corporate events, and private shoots. Our commitment is to capture your most cherished memories with professionalism, creativity, and attention to detail.</p>
+      <ul>
+        <li><strong>Weddings:</strong> Timeless, romantic, and beautifully edited memories of your special day.</li>
+        <li><strong>Parties:</strong> From birthdays to milestone moments—we freeze the fun in time.</li>
+        <li><strong>Graduations:</strong> Celebrate academic success with polished, bold portraits and group shots.</li>
+        <li><strong>Corporate:</strong> Enhance your brand or event with clean, high-impact imagery.</li>
+      </ul>
+      <p>Let us tell your story with stunning visuals that you'll treasure for years to come.</p>
+    </section>
+
+    <section id="portfolio">
+      <h2>Portfolio</h2>
+      <div class="gallery">
+        <div>
+          <img src="images/photo1.jpg" alt="Cattle field with mask">
+          <div class="caption">"A spirit walks among the cattle, telling a story older than time itself. This image reflects our deep-rooted connection with land and identity."</div>
+        </div>
+        <div>
+          <img src="images/67123093_136914650855448_7734641703746858148_n.jpg" alt="Portrait at fast food stand">
+          <div class="caption">"A quiet moment at the crossroads of modern youth and township vibrance. The subject’s gaze is a mix of hope, struggle, and resilience."</div>
+        </div>
+        <div>
+          <img src="images/93263043_227507888324542_4118379707953780405_n.jpg" alt="Silhouette at sunset">
+          <div class="caption">"As the sun kisses the skyline goodbye, a silhouette becomes a symbol of dreams chasing the horizon. This is where freedom meets dusk."</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Cell: <a href="tel:0682008900">068 200 8900</a></p>
+      <p>Email: <a href="mailto:musamolefe24@gmail.com">musamolefe24@gmail.com</a></p>
+      <div class="social">
+        <p>Follow me on <a href="https://www.instagram.com/musa_jr43/" target="_blank">Instagram</a></p>
+      </div>
+      <form>
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="tel" name="cell" placeholder="Your Cell Number" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="4" placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Mousa Molefe. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Simple smooth scrolling for nav links
+    document.querySelectorAll('nav a').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        if (this.getAttribute('href').startsWith('#')) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
